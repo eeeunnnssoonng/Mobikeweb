@@ -1,79 +1,187 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>게임센터</title>
   <link rel="stylesheet" href="css/sub1.css">
 </head>
+
 <body>
   <!-- 서브메뉴바 -->
   <header>
+    <div class="nav_sub">
+      <ul>
+        <li><a href="index.html"><img src="image/arrow 1.png" alt="뒤로가기"></a></li>
+        <li>
+          <p>게임센터</p>
+        </li>
+        <li class="trigger"><img src="image/navicon.png" alt="메뉴"></li>
+      </ul>
+    </div>
 
-  <div class="nav_sub">
-    <ul>
-      <li><img src="image/arrow 1.png" alt="뒤로가기"></li>
-      <li><p>게임센터</p></li>
-      <li class="trigger"><img src="image/navicon.png" alt="메뉴"></li>
-    </ul>
-  </div>
-
-<!-- 햄버거 메뉴 -->
-  <div id="sidebar">
-  <nav>
-  <ul class="menu">
-  <ul class="logom_btn">
-    <li><img src="image/KBO-로고W 2.png" alr="logo"></li>
-    <li class="colse"><img src="image/x.png" alt=""></li>
-  </ul>
-  <li class="main"><a href="#">일정/결과</a>
-    <ul class="show sub1">
-    <li><a href="#">게임센터</a></li> 
-    </ul>
-  </li>
-  <li class="main"><a href="#">순위</a>
-    <ul class="show sub2">
-      <li><a href="#">top 5 및 선수순위</a></li> 
-    </ul>
-  </li>
-  <li class="main"><a href="#">구단소개</a>
-    <ul class="show sub3">
-      <li><a href="#">조직및활동</a></li>
-      <li><a href="#">KBO로고</a></li>
-      <li><a href="#">티켓안내</a></li>
-    </ul>
-    </li>
-    <li class="main"><a href="#">NEWS</a></li> 
-    <li class="main"><a href="#">마켓</a></li> 
-    <li class="main"><a href="#">게시판</a></li>
-    <li class="icon_sns">
-      <img src="image/facebook.png" alt="">
-      <img src="image/instagram.png" alt="">
-      <img src="image/youtube.png" alt="">
-    </li>
-  </ul> 
-  </nav>
-  </div>
+    <!-- 햄버거 메뉴 -->
+    <div id="sidebar">
+      <nav>
+        <ul class="menu">
+          <ul class="logom_btn">
+            <li><img src="image/KBO-로고W 2.png" alr="logo"></li>
+            <li class="colse"><img src="image/x.png" alt=""></li>
+          </ul>
+          <li class="main"><a href="index.html">홈</a>
+          <li class="main"><a href="#">일정/결과</a>
+            <ul class="show sub1">
+              <li><a href="sub1.html">게임센터</a></li>
+            </ul>
+          </li>
+          <li class="main"><a href="#">순위</a>
+            <ul class="show sub2">
+              <li><a href="sub2.html">top 5 및 선수순위</a></li>
+            </ul>
+          </li>
+          <li class="main"><a href="#">구단소개</a>
+            <ul class="show sub3">
+              <li><a href="#">조직및활동</a></li>
+              <li><a href="#">KBO로고</a></li>
+              <li><a href="#">티켓안내</a></li>
+            </ul>
+          </li>
+          <li class="main"><a href="#">NEWS</a></li>
+          <li class="main"><a href="#">마켓</a></li>
+          <li class="main"><a href="#">게시판</a></li>
+          <li class="icon_sns">
+            <img src="image/facebook.png" alt="페이스북">
+            <img src="image/instagram.png" alt="인스타그램">
+            <img src="image/youtube.png" alt="유튜브">
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <!-- section ========================== -->
   <section>
+    <div class="gamesday">
+      <div id="date"></div>
+      <div class="gametime">
+        <select>
+          <option vlas="18:30">18:30</option>
+          <option vlas="17:00">2022</option>
+          <option vlas="14:">2021</option>
+          </select>
+      </div>
+      <div class="gameback">
+    <div class="gamebackT">
+          <p>KBO 정규시즌</p>
+          <p>대구 | 18:30</p>
+          <p>KN-T,SS-T</p>
+          <p>경기예정</p>
+          <ul>
+            <li><img src="image/gametoday1.png"></li>
+            <li><span>vs</span></li>
+            <li><img src="image/gametoday2.png"></li>
+          </ul>
+      </div>
+      </div>
+    </div>
+    <div class="gameall">
+      <h3>경기결과</h3>
+      <div class="gameresult">
+        <div class="game1">
+          <p>잠실 | 14:00</p>
+          <p>SPO-T	</p>
+          <div class="resultList">
+            <p>1</p>
+            <p>vs</p>
+            <p>5</p>
+          </div>
+          <p>한화 <span>패</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            LG <span>승</span></p>
+          <div class="re_button">
+            <a href="https://www.koreabaseball.com/Schedule/Schedule.aspx" target="_blank"><p>경기결과로 이동하기</p></a>
+          </div>
+        </div>
+
+        <div class="game1">
+          <p>문학 | 14:00</p>
+          <p>MS-T</p>
+          <div class="resultList">
+            <p>1</p>
+            <p>vs</p>
+            <p>8</p>
+          </div>
+          <p>SSG <span>패</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            롯데<span>승</span></p>
+          <div class="re_button">
+            <a href="https://www.koreabaseball.com/Schedule/Schedule.aspx" target="_blank"><p>경기결과로 이동하기</p></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="gameresult">
+        <div class="game1">
+          <p>창원 | 14:00</p>
+          <p>KN-T</p>
+          <div class="resultList">
+            <p>5</p>
+            <p>vs</p>
+            <p>6</p>
+          </div>
+          <p>두산 <span>패</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            NC <span>승</span></p>
+          <div class="re_button">
+            <a href="https://www.koreabaseball.com/Schedule/Schedule.aspx" target="_blank"><p>경기결과로 이동하기</p></a>
+          </div>
+        </div>
+
+        <div class="game1">
+          <p>광주 | 14:00</p>
+          <p>SPO-2T</p>
+          <div class="resultList">
+            <p>2</p>
+            <p>vs</p>
+            <p>3</p>
+          </div>
+          <p>KIA <span>패</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            KT <span>승</span></p>
+          <div class="re_button">
+            <a href="https://www.koreabaseball.com/Schedule/Schedule.aspx" target="_blank"><p>경기결과로 이동하기</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- footer=============================== -->
   <footer>
     <address>
-    <img src="image/KBO-로고W 1.png" alt="f_logo">
-    <p>(사)한국야구위원회 | 서울시 강남구 강남대로 278 | 02)3460-4600
-    Copyrightⓒ KBO, All Rights Reserved</p>
-    <div class="icon">
-    <p>Family Sites &nbsp;&nbsp;&nbsp;+</p>
-    <img src="image/youtube.png" alt="유튜브아이콘">
-    <img src="image/instagram.png" alt="인스타그램 아이콘">
-    <img src="image/facebook.png" alt="페이스북아이콘">
-    </div>
+      <img src="image/KBO-로고W 1.png" alt="f_logo">
+      <p>(사)한국야구위원회 | 서울시 강남구 강남대로 278 | 02)3460-4600
+        Copyrightⓒ KBO, All Rights Reserved</p>
+      <div class="icon">
+        <p>Family Sites &nbsp;&nbsp;&nbsp;+</p>
+        <img src="image/youtube.png" alt="유튜브아이콘">
+        <img src="image/instagram.png" alt="인스타그램 아이콘">
+        <img src="image/facebook.png" alt="페이스북아이콘">
+      </div>
     </address>
-    <script src="js/jquery-3.7.0.min.js"></script>
-    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
-    <script src="js/menu.js"></script>
   </footer>
+  <script>
+    $(document).ready(function () {
+  let objDate = new Date();
+
+  let year=objDate.getFullYear(); // 년 구하기
+  let month=objDate.getMonth(); //월구하기 ->0(1월)부터 11(12월)까지의 정수값
+  let date=objDate.getDate();//일구하기->날짜(일)를 나타내는 1에서 31까지의 정수
+  let day=objDate.getDay(); // 0(일)부터 6(토)까지의 정수값
+  let aryDay = ['일','월','화','수','목','금','토'];
+  
+  //년, 월, 일, 요일 출력
+  let fulldate=`${year}년 ${month+1}월 ${date}일 ${aryDay[day]}요일`;
+  $('#date').text(fulldate);});
+  </script>
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/menu.js"></script>
 </body>
+
 </html>
